@@ -1,0 +1,45 @@
+"1" "Lighting"
+{
+	"1" "Post-processing"
+	{
+		"1" "On" "cl_postprocess 1"
+		"2" "Off" "cl_postprocess 0"
+	} 
+	"2" "Dynamic lighting"
+	{
+		"1" "On" "cl_dynamiclights 1"
+		"2" "On + welder flashing" "cl_dynamiclights 2"
+		"3"	"Off" "cl_dynamiclights 0"
+	}
+	
+	"3" "Lighting intensity"
+	{
+		"1" "cl_intensity 0" "cl_intensity 0"
+		"2" "cl_intensity 0.3" "cl_intensity 0.3"
+		"3" "cl_intensity 0.6" "cl_intensity 0.6"
+		"4" "cl_intensity 1" "cl_intensity 1"
+		"5" "cl_intensity 1.5" "cl_intensity 1.5"
+		"6" "cl_intensity 2" "cl_intensity 2"
+		"7" "enter custom setting" "messagemode cl_intensity"
+	}
+}
+"2" "Crosshair"
+{
+	"1" "Modes"
+	{
+		"1" "Old system" "crosshair 1; cl_customcrosshair 0; cl_cross 0"
+		"2" "New system" "crosshair 0; cl_customcrosshair 0; cl_cross 1"
+	}
+	"2" "Colour"
+	{
+		"1" "Enter custom transparency (0-255)" "messagemode cl_cross_alpha"
+		"2" "Enter custom RGB (e.g. 255 0 255)" "messagemode cl_cross_color"
+		"3" "Crosshair outline transparency (0-255)" "messagemode cl_cross_outline_alpha"
+	}
+	"3" "Size"
+	{
+		"1" "Length (cl_cross_size)" "messagemode cl_cross_size"
+		"2" "Gap (cl_cross_gap)" "messagemode cl_cross_gap"
+	}
+}
+"0" "Exit" "slot10"
