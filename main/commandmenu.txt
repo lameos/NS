@@ -20,7 +20,7 @@
 		"4" "cl_intensity 1" "cl_intensity 1"
 		"5" "cl_intensity 1.5" "cl_intensity 1.5"
 		"6" "cl_intensity 2" "cl_intensity 2"
-		"7" "enter custom setting" "messagemode cl_intensity"
+		"7" "enter custom setting" "cl_intensity; messagemode cl_intensity"
 	}
 }
 "2" "Crosshair"
@@ -29,17 +29,51 @@
 	{
 		"1" "Old system" "crosshair 1; cl_customcrosshair 0; cl_cross 0"
 		"2" "New system" "crosshair 0; cl_customcrosshair 0; cl_cross 1"
+		"3" "Config settings"
+		{
+			"1" "Use default crosshairs" "cl_weaponcfgs 2"
+			"2" "Use custom weaponcfgs" "cl_weaponcfgs 1"
+			"3" "Use current settings" "cl_weaponcfgs 0"
+		} 
 	}
 	"2" "Colour"
 	{
-		"1" "Enter custom transparency (0-255)" "messagemode cl_cross_alpha"
-		"2" "Enter custom RGB (e.g. 255 0 255)" "messagemode cl_cross_color"
-		"3" "Crosshair outline transparency (0-255)" "messagemode cl_cross_outline_alpha"
+		"1" "Enter alpha (0-255)" "cl_cross_alpha; messagemode cl_cross_alpha"
+		"2" "Enter RGB (eg 255 0 255)" "cl_cross_color; messagemode cl_cross_color"
+		"3" "Crosshair outline alpha (0-255)" "cl_cross_outline_alpha; messagemode cl_cross_outline_alpha"
 	}
 	"3" "Size"
 	{
-		"1" "Length (cl_cross_size)" "messagemode cl_cross_size"
-		"2" "Gap (cl_cross_gap)" "messagemode cl_cross_gap"
+		"1" "Enter length" "cl_cross_size; messagemode cl_cross_size"
+		"2" "Enter gap" "cl_cross_gap; messagemode cl_cross_gap"
+		"3" "Enter thickness" "cl_cross_thickness; messagemode cl_cross_thickness"
+	}
+	"4" "Outline"
+	{
+		"1" "Enter size" "cl_cross_outline; messagemode cl_cross_outline"
+		"2" "Enter alpha" "cl_cross_outline_alpha; messagemode cl_cross_outline_alpha"
+		"3" "Enter inner thickness" "cl_cross_outline_inner; messagemode cl_cross_outline_inner"
+	}
+	"5" "Circle"
+	{
+		"1" "Enter radius" "cl_cross_circle_radius; messagemode cl_cross_circle_radius"
+		"2" "Enter thickness" "cl_cross_circle_thickness; messagemode cl_cross_circle_thickness"
+		"3" "Enter colour" "cl_cross_circle_color; messagemode cl_cross_circle_color"
+		"4" "Enter alpha" "cl_cross_circle_alpha; messagemode cl_cross_circle_alpha"
+		"5" "Outline"
+		{
+			"1" "Enter size" "cl_cross_circle_outline; messagemode cl_cross_circle_outline"
+			"2" "Enter outline alpha" "cl_cross_circle_outline_alpha; messagemode cl_cross_circle_outline_alpha"
+			"3" "Enter outline thickness" "cl_cross_circle_outline_inner; messagemode cl_cross_circle_outline_inner"
+		}
+	}
+	"6" "Dot"
+	{
+		"1" "Enter size" "cl_cross_dot_size; messagemode cl_cross_dot_size"
+		"2" "Enter colour" "cl_cross_dot_color; messagemode cl_cross_dot_color"
+		"3" "Enter alpha" "cl_cross_dot_alpha; messagemode cl_cross_dot_alpha"
+		"4" "Enter outline size" "cl_cross_dot_outline; messagemode cl_cross_dot_outline"
+		"5" "Enter outline alpha" "cl_cross_dot_outline_alpha; messagemode cl_cross_dot_outline_alpha"
 	}
 }
 "0" "Exit" "slot10"
