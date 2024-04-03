@@ -17,8 +17,8 @@
 	}
 	"4"
 	{
-		"label" ""
-		"command" ""
+		"label" "Reconnect to server"
+		"command" "engine retry"
 	}
 	"5"
 	{
