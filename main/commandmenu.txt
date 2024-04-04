@@ -40,7 +40,7 @@
 	{
 		"1" "Enter alpha (0-255)" "cl_cross_alpha; messagemode cl_cross_alpha"
 		"2" "Enter RGB (eg 255 0 255)" "cl_cross_color; messagemode cl_cross_color"
-		"3" "Crosshair outline alpha (0-255)" "cl_cross_outline_alpha; messagemode cl_cross_outline_alpha"
+		"3" "Enter outline alpha (0-255)" "cl_cross_outline_alpha; messagemode cl_cross_outline_alpha"
 	}
 	"3" "Size"
 	{

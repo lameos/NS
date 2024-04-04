@@ -1549,7 +1549,7 @@ void NsPreset(void)
 			//sprintf(localizedText, CHudTextMessage::BufferedLocaliseTextString("#Preset1"));
 			snprintf(execText, 1024, "%c** %s\n", HUD_PRINTTALK, "Classic NS audio/visual presets applied. Left click once to fix bug. See console for details.");
 			gHUD.m_TextMessage.MsgFunc_TextMsg(NULL, (int)strlen(execText) + 1, execText);
-			ClientCmd("echo \"NOTE: Left click once after applying these settings, or your next left click won't register. It's an HL engine bug.\""); // Use echo or it's out of order.
+			ClientCmd("echo \"NOTE: You must left click once after applying these settings, or your next left click won't register. It's an HL engine bug.\""); // Use echo or it's out of order.
 		}
 		else
 		{
@@ -1565,7 +1565,7 @@ void NsPreset(void)
 			//sprintf(localizedText, CHudTextMessage::BufferedLocaliseTextString("#Preset2"));
 			snprintf(execText, 1024, "%c** %s\n", HUD_PRINTTALK, "NS 3.3 audio/visual presets applied. Left click once to fix bug. See console for details. ");
 			gHUD.m_TextMessage.MsgFunc_TextMsg(NULL, (int)strlen(execText) + 1, execText);
-			ClientCmd("echo \"NOTE: Left click once after applying these settings, or your next left click won't register. It's an HL engine bug.\""); // Use echo or it's out of order.
+			ClientCmd("echo \"NOTE: You must left click once after applying these settings, or your next left click won't register. It's an HL engine bug.\""); // Use echo or it's out of order.
 		}
 		else
 		{
@@ -1579,9 +1579,9 @@ void NsPreset(void)
 		{
 			// Localize later.
 			//sprintf(localizedText, CHudTextMessage::BufferedLocaliseTextString("#Preset3"));
-			snprintf(execText, 1024, "%c** %s\n", HUD_PRINTTALK, "Competive audio/visual presets applied. Left click once to fix bug. See console for details.");
+			snprintf(execText, 1024, "%c** %s\n", HUD_PRINTTALK, "Competitive audio/visual presets applied. Left click once to fix bug. See console for details.");
 			gHUD.m_TextMessage.MsgFunc_TextMsg(NULL, (int)strlen(execText) + 1, execText);
-			ClientCmd("echo \"NOTE: Left click once after applying these settings, or your next left click won't register. It's an HL engine bug.\""); // Use echo or it's out of order.
+			ClientCmd("echo \"NOTE: You must left click once after applying these settings, or your next left click won't register. It's an HL engine bug.\""); // Use echo or it's out of order.
 		}
 		else
 		{
@@ -1589,7 +1589,7 @@ void NsPreset(void)
 		}
 		break;
 	default:
-		gEngfuncs.Con_Printf("NS configuration preset selector. Useage:\n1: apply NS 3.2 settings\n2: apply NS 3.3 settings\n3: apply competitive settings\n");
+		gEngfuncs.Con_Printf("NS configuration preset selector. Usage:\n1: apply NS 3.2 settings\n2: apply NS 3.3 settings\n3: apply competitive settings\n");
 	}
 }
 
